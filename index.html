@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GeekZone: bonecos colecionáveis de influenciadores, atores e cantores."
+    />
+    <title>GeekZone — Colecionáveis dos seus ídolos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="announcement-bar">
+      Frete grátis para todo o Brasil · Precisa de ajuda? <a href="#catalog-title">Fale com a equipe GeekZone</a>
+    </div>
+    <header class="topbar">
+      <div class="masthead container">
+        <a class="brand" href="#" aria-label="GeekZone, início">
+          <span class="brand-mark" aria-hidden="true">G</span>
+          <span>geek<span>zone</span></span>
+        </a>
+        <form class="search-form" role="search" id="search-form">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input
+            class="search-input"
+            id="product-search"
+            type="search"
+            placeholder="Digite aqui o que procura..."
+            aria-label="Buscar produtos"
+          />
+        </form>
+        <div class="header-links">
+          <button class="header-link" id="open-tracking" type="button"><span aria-hidden="true">🚚</span>Rastreio</button>
+          <button class="header-link" id="open-returns" type="button"><span aria-hidden="true">↻</span>Trocar e Devolver</button>
+        </div>
+        <div class="nav-actions">
+          <button
+            class="account-button"
+            id="open-account"
+            type="button"
+            aria-label="Entrar ou acessar minha conta"
+            title="Minha conta"
+          >👤</button>
+          <button
+            class="theme-button"
+            id="theme-toggle"
+            type="button"
+            aria-label="Ativar modo escuro"
+            title="Alternar tema"
+          >
+            <span id="theme-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button
+            class="cart-summary"
+            id="open-cart"
+            type="button"
+            aria-label="Abrir carrinho: 0 itens, total R$ 0,00"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+            aria-controls="checkout-dialog"
+          >
+            <span class="cart-icon" aria-hidden="true">🛒</span>
+            <span id="cart-count" aria-live="polite">0 itens</span>
+            <span class="cart-total" id="cart-total" aria-live="polite">R$ 0,00</span>
+          </button>
+        </div>
+      </div>
+      <nav class="category-nav" aria-label="Categorias">
+        <div class="category-list container">
+          <button class="category-button is-active" type="button" data-filter="all">Todos</button>
+          <button class="category-button" type="button" data-filter="influenciadores">Influenciadores</button>
+          <button class="category-button" type="button" data-filter="atores">Atores</button>
+          <button class="category-button" type="button" data-filter="cantores">Cantores</button>
+          <button class="category-button" type="button" data-filter="novidades">Novidades</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="promo-ticker" aria-label="Promoção GeekZone">
+        <span>Ídolos em miniatura</span>•<span>Encontre seu próximo colecionável</span>•<span>Novidades no radar</span>
+      </div>
+      <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <span class="eyebrow">Coleção especial GeekZone</span>
+            <h1 id="hero-title">Seus ídolos <span>na sua estante.</span></h1>
+            <p>
+              Influenciadores, atores e cantores em versões colecionáveis para
+              deixar sua coleção ainda mais especial.
+            </p>
+            <a class="hero-cta" href="#catalog-title"><span aria-hidden="true">✦</span>Ver coleção</a>
+            <div class="perks" aria-label="Benefícios da GeekZone">
+              <span>Seleção especial</span>
+              <span>Novidades toda semana</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Boneco colecionável da Virginia Fonseca">
+            <span class="deal-bubble">Destaque<strong>Pop!</strong>da coleção</span>
+            <img class="hero-product" src="images/virginia-fonseca.png" alt="Boneco colecionável da Virginia Fonseca na embalagem" />
+          </div>
+      </section>
+
+      <div class="container">
+        <section class="catalog" aria-labelledby="catalog-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="catalog-title">Sua coleção começa aqui</h2>
+              <p>Bonecos colecionáveis dos seus ídolos favoritos.</p>
+            </div>
+            <span class="product-count">06 produtos</span>
+          </div>
+
+          <div class="products" id="product-grid">
+            <article class="product-card" data-category="influenciadores" data-new="true">
+              <div class="product-art" style="--art-bg: linear-gradient(135deg, #dbeeff, #75a9dc)">
+                <span class="badge">Pop! Culture #202</span>
+                <img class="product-photo" src="images/virginia-fonseca.png" alt="Boneco colecionável da Virginia Fonseca na embalagem" />
+              </div>
+              <div class="product-info">
+                <span class="category">Influenciadores</span>
+                <h3>Virginia Fonseca #202</h3>
+                <p class="product-description">A influenciadora em versão colecionável para sua estante.</p>
+                <div class="product-bottom">
+                  <span class="price">R$ 399,90</span>
+                  <button class="buy-button" type="button" data-name="Virginia Fonseca #202" data-price="399.90">
+                    <span aria-hidden="true">＋</span> Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="cantores">
+              <div class="product-art" style="--art-bg: linear-gradient(135deg, #d9efff, #5b9abd)">
+                <span class="badge">Pop! Culture #203</span>
+                <img class="product-photo" src="images/ze-felipe.png" alt="Boneco colecionável do Zé Felipe na embalagem" />
+              </div>
+              <div class="product-info">
+                <span class="category">Cantores</span>
+                <h3>Zé Felipe #203</h3>
+                <p class="product-description">Uma edição colecionável do cantor e criador de conteúdo.</p>
+                <div class="product-bottom">
+                  <span class="price">R$ 199,90</span>
+                  <button class="buy-button" type="button" data-name="Zé Felipe #203" data-price="199.90">
+                    <span aria-hidden="true">＋</span> Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="atores">
+              <div class="product-art" style="--art-bg: linear-gradient(135deg, #f2e3d1, #b78658)">
+                <span class="badge">Pop! Television #101</span>
+                <img class="product-photo" src="images/pedro-dom.png" alt="Boneco colecionável do Pedro Dom na embalagem" />
+              </div>
+              <div class="product-info">
+                <span class="category">Atores</span>
+                <h3>Felipe Bragança como Pedro Dom #101</h3>
+                <p class="product-description">Uma homenagem colecionável ao personagem Pedro Dom.</p>
+                <div class="product-bottom">
+                  <span class="price">R$ 199,90</span>
+                  <button class="buy-button" type="button" data-name="Pedro Dom #101" data-price="199.90">
+                    <span aria-hidden="true">＋</span> Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="atores" data-new="true">
+              <div class="product-art" style="--art-bg: linear-gradient(135deg, #f1dfd8, #b46a55)">
+                <span class="badge">Pop! Television #531</span>
+                <img class="product-photo" src="images/adriana-esteves.png" alt="Boneco colecionável da Adriana Esteves na embalagem" />
+              </div>
+              <div class="product-info">
+                <span class="category">Atores</span>
+                <h3>Adriana Esteves #531</h3>
+                <p class="product-description">A atriz em edição colecionável inspirada em Avenida Brasil.</p>
+                <div class="product-bottom">
+                  <span class="price">R$ 289,90</span>
+                  <button class="buy-button" type="button" data-name="Adriana Esteves #531" data-price="289.90">
+                    <span aria-hidden="true">＋</span> Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="cantores" data-new="true">
+              <div class="product-art" style="--art-bg: linear-gradient(135deg, #f7ddec, #bb78a6)">
+                <span class="badge">Pop! Icons #31</span>
+                <img class="product-photo" src="images/simone-mendes.png" alt="Boneco colecionável da Simone Mendes na embalagem" />
+              </div>
+              <div class="product-info">
+                <span class="category">Cantores</span>
+                <h3>Simone Mendes #31</h3>
+                <p class="product-description">A cantora em uma edição especial para fãs e colecionadores.</p>
+                <div class="product-bottom">
+                  <span class="price">R$ 199,90</span>
+                  <button class="buy-button" type="button" data-name="Simone Mendes #31" data-price="199.90">
+                    <span aria-hidden="true">＋</span> Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="cantores" data-new="true">
+              <div class="product-art" style="--art-bg: linear-gradient(135deg, #e5e2e2, #a8323c)">
+                <span class="badge">Pop! #148</span>
+                <img class="product-photo" src="images/veigh.png" alt="Boneco colecionável do Veigh na embalagem" />
+              </div>
+              <div class="product-info">
+                <span class="category">Cantores</span>
+                <h3>Veigh #148</h3>
+                <p class="product-description">O rapper em uma edição colecionável para os fãs de trap.</p>
+                <div class="product-bottom">
+                  <span class="price">R$ 299,90</span>
+                  <button class="buy-button" type="button" data-name="Veigh #148" data-price="299.90">
+                    <span aria-hidden="true">＋</span> Comprar
+                  </button>
+                </div>
+              </div>
+            </article>
+            <p class="no-results" id="no-results" hidden>Nenhum produto encontrado. Tente outra busca ou categoria.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-header">
+        <div>
+          <span class="dialog-eyebrow">GeekZone</span>
+          <h2 id="dialog-title">Seu carrinho</h2>
+        </div>
+        <button class="dialog-close" id="close-dialog" type="button" aria-label="Fechar">×</button>
+      </div>
+
+      <section class="checkout-stage" id="cart-stage" aria-labelledby="dialog-title">
+        <div class="cart-lines" id="cart-lines"></div>
+        <div class="empty-cart" id="empty-cart" hidden>
+          <span aria-hidden="true">🛍️</span>
+          <h3>Seu carrinho está vazio</h3>
+          <p>Encontre seu próximo colecionável na vitrine.</p>
+        </div>
+        <div class="order-totals">
+          <div><span>Produtos</span><strong id="cart-subtotal">R$ 0,00</strong></div>
+          <div><span>Entrega</span><span class="shipping-note">Frete grátis para todo o Brasil</span></div>
+          <div class="grand-total"><span>Subtotal dos produtos</span><strong id="cart-grand-total">R$ 0,00</strong></div>
+          <p class="demo-notice">O frete é grátis para todos os estados do Brasil.</p>
+        </div>
+        <button class="checkout-button" id="start-checkout" type="button">Continuar para entrega</button>
+        <button class="continue-shopping" id="continue-shopping" type="button">Continuar comprando</button>
+      </section>
+
+      <section class="checkout-stage" id="details-stage" aria-labelledby="details-title" hidden>
+        <button class="back-button" id="back-to-cart" type="button">← Voltar ao carrinho</button>
+        <h3 id="details-title">Dados para o pedido</h3>
+        <p class="stage-description">Informe o endereço de entrega e pague com Pix. O QR Code será gerado para o valor exato do pedido.</p>
+        <form id="checkout-form">
+          <div class="form-grid">
+            <label class="form-field form-field-wide">
+              Nome completo
+              <input name="name" autocomplete="name" required minlength="3" />
+            </label>
+            <label class="form-field">
+              E-mail
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label class="form-field">
+              Telefone
+              <input name="phone" type="tel" inputmode="tel" autocomplete="tel" required minlength="10" />
+            </label>
+            <label class="form-field">
+              CEP
+              <input name="postalCode" autocomplete="postal-code" inputmode="numeric" required pattern="[0-9]{5}-?[0-9]{3}" placeholder="00000-000" />
+            </label>
+            <label class="form-field form-field-wide">
+              Rua / Avenida
+              <input name="street" autocomplete="street-address" required />
+            </label>
+            <label class="form-field">
+              Número
+              <input name="number" required />
+            </label>
+            <label class="form-field">
+              Complemento <span>(opcional)</span>
+              <input name="complement" autocomplete="address-line2" />
+            </label>
+            <label class="form-field">
+              Bairro
+              <input name="district" required />
+            </label>
+            <label class="form-field">
+              Cidade
+              <input name="city" autocomplete="address-level2" required />
+            </label>
+            <label class="form-field">
+              Estado
+              <select name="state" autocomplete="address-level1" required>
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option><option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option><option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option><option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option><option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option><option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option><option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option><option value="PA">Pará</option>
+                <option value="PB">Paraíba</option><option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option><option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option><option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option><option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option><option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option><option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </label>
+          </div>
+          <fieldset class="payment-options">
+            <legend>Pagamento via Pix</legend>
+            <p>Pix direto para a chave da loja. Cartão de crédito e débito não são aceitos.</p>
+          </fieldset>
+          <p class="free-shipping-message">Frete grátis para todo o Brasil. Você não paga nada pela entrega.</p>
+          <div class="checkout-review-total">
+            <span>Total (frete grátis)</span>
+            <strong id="checkout-total">R$ 0,00</strong>
+          </div>
+          <p class="demo-notice" id="checkout-feedback" role="status"></p>
+          <button class="checkout-button" id="pay-order" type="submit" disabled>Gerar QR Code Pix</button>
+        </form>
+      </section>
+
+      <section class="checkout-stage pix-stage" id="pix-stage" aria-labelledby="pix-title" hidden>
+        <button class="back-button" id="back-to-details" type="button">← Voltar aos dados do pedido</button>
+        <h3 id="pix-title">Pague com Pix</h3>
+        <p class="stage-description">Escaneie o QR Code no aplicativo do seu banco ou copie o código Pix. A loja confirma o pagamento manualmente após conferir o crédito na conta.</p>
+        <p class="pix-order-code" id="pix-order-code"></p>
+        <img class="pix-qr-image" id="pix-qr-image" alt="QR Code Pix para pagar este pedido" />
+        <label class="form-field pix-code-label" for="pix-copy-code">Pix copia e cola</label>
+        <textarea id="pix-copy-code" class="pix-copy-code" readonly rows="4" aria-label="Código Pix copia e cola"></textarea>
+        <button class="continue-shopping" id="copy-pix-code" type="button">Copiar código Pix</button>
+        <p class="demo-notice pix-payment-feedback" id="pix-payment-feedback" role="status"></p>
+        <button class="checkout-button" id="verify-pix-payment" type="button">Atualizar status do pedido</button>
+      </section>
+
+    </dialog>
+
+    <dialog class="checkout-dialog account-dialog" id="account-dialog" aria-labelledby="account-title">
+      <div class="dialog-header">
+        <div>
+          <span class="dialog-eyebrow">GeekZone</span>
+          <h2 id="account-title">Minha conta</h2>
+        </div>
+        <button class="dialog-close" id="close-account" type="button" aria-label="Fechar">×</button>
+      </div>
+      <section class="checkout-stage" id="account-auth">
+        <div class="account-tabs" role="tablist" aria-label="Acesso à conta">
+          <button class="account-tab is-active" id="login-tab" type="button" role="tab" aria-selected="true">Entrar</button>
+          <button class="account-tab" id="register-tab" type="button" role="tab" aria-selected="false">Criar conta</button>
+        </div>
+        <form id="login-form">
+          <label class="form-field">E-mail<input name="email" type="email" autocomplete="email" required /></label>
+          <label class="form-field account-spaced">Senha<input name="password" type="password" autocomplete="current-password" required /></label>
+          <button class="checkout-button" type="submit">Entrar</button>
+        </form>
+        <form id="register-form" hidden>
+          <label class="form-field">Nome completo<input name="name" autocomplete="name" minlength="3" required /></label>
+          <label class="form-field account-spaced">E-mail<input name="email" type="email" autocomplete="email" required /></label>
+          <label class="form-field account-spaced">Telefone<input name="phone" type="tel" autocomplete="tel" required /></label>
+          <label class="form-field account-spaced">Senha (mínimo 10 caracteres)<input name="password" type="password" autocomplete="new-password" minlength="10" required /></label>
+          <button class="checkout-button" type="submit">Criar minha conta</button>
+        </form>
+        <p class="demo-notice account-feedback" id="account-feedback" role="status"></p>
+      </section>
+      <section class="checkout-stage" id="account-profile" hidden>
+        <p class="account-welcome" id="account-welcome"></p>
+        <div class="account-tools">
+          <button class="continue-shopping" id="account-track" type="button">Rastrear pedido</button>
+          <button class="continue-shopping" id="account-returns" type="button">Trocar ou devolver</button>
+        </div>
+        <div class="account-orders-heading">
+          <h3>Meus pedidos</h3>
+          <button class="text-button" id="refresh-orders" type="button">Atualizar</button>
+        </div>
+        <div class="account-orders" id="account-orders"></div>
+        <p class="demo-notice" id="account-orders-message" role="status"></p>
+        <button class="continue-shopping" id="logout-button" type="button">Sair da conta</button>
+      </section>
+      <section class="checkout-stage return-request-stage" id="return-request-stage" hidden>
+        <button class="back-button" id="return-back" type="button">← Voltar aos pedidos</button>
+        <h3>Solicitar troca ou devolução</h3>
+        <form id="return-form">
+          <input name="orderId" id="return-order-id" type="hidden" />
+          <label class="form-field account-spaced">
+            Motivo
+            <select name="reason" required>
+              <option value="">Selecione</option>
+              <option value="arrependimento">Arrependimento da compra</option>
+              <option value="defeito">Produto com defeito</option>
+              <option value="produto_incorreto">Produto incorreto</option>
+              <option value="outro">Outro motivo</option>
+            </select>
+          </label>
+          <label class="form-field account-spaced">
+            Detalhes
+            <textarea name="details" rows="4" maxlength="1000" placeholder="Conte um pouco mais (opcional)"></textarea>
+          </label>
+          <p class="demo-notice">A solicitação será enviada à equipe para análise. O envio de retorno será orientado após a aprovação.</p>
+          <button class="checkout-button" type="submit">Enviar solicitação</button>
+        </form>
+      </section>
+    </dialog>
+
+    <dialog class="checkout-dialog" id="tracking-dialog" aria-labelledby="tracking-title">
+      <div class="dialog-header">
+        <div>
+          <span class="dialog-eyebrow">GeekZone</span>
+          <h2 id="tracking-title">Rastrear pedido</h2>
+        </div>
+        <button class="dialog-close" id="close-tracking" type="button" aria-label="Fechar">×</button>
+      </div>
+      <section class="checkout-stage">
+        <p class="stage-description">Informe o código do pedido e o e-mail usado na compra.</p>
+        <form id="tracking-form" class="account-spaced">
+          <label class="form-field">Código do pedido<input name="code" required placeholder="GZ-XXXXXXXX" /></label>
+          <label class="form-field account-spaced">E-mail da compra<input name="email" type="email" required /></label>
+          <button class="checkout-button" type="submit">Consultar pedido</button>
+        </form>
+        <div class="tracking-result" id="tracking-result" role="status" hidden></div>
+      </section>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <aside class="voice-assistant" aria-label="Assistente por voz da GeekZone">
+      <section class="voice-assistant-panel" id="voice-assistant-panel" aria-labelledby="voice-assistant-title" hidden>
+        <div class="voice-assistant-heading">
+          <div>
+            <span class="voice-assistant-eyebrow">GeekZone</span>
+            <h2 id="voice-assistant-title">Assistente por voz</h2>
+          </div>
+          <button class="voice-assistant-close" id="voice-assistant-close" type="button" aria-label="Fechar assistente">×</button>
+        </div>
+        <p class="voice-assistant-status" id="voice-assistant-status" role="status" aria-live="polite">
+          Toque no microfone e diga o que precisa.
+        </p>
+        <p class="voice-assistant-transcript" id="voice-assistant-transcript" aria-live="polite"></p>
+        <p class="voice-assistant-hint">
+          Experimente: “comprar Virginia Fonseca”, “abrir carrinho”, “modo escuro” ou “modo claro”.
+        </p>
+        <form class="voice-assistant-command" id="voice-assistant-command-form">
+          <label class="voice-assistant-input-label" for="voice-assistant-command-input">
+            Ou digite um comando
+            <input id="voice-assistant-command-input" type="text" autocomplete="off" />
+          </label>
+          <button class="voice-assistant-send" type="submit">Enviar</button>
+        </form>
+        <button class="voice-assistant-mic" id="voice-assistant-mic" type="button">
+          <span aria-hidden="true">🎙️</span>
+          <span id="voice-assistant-mic-label">Começar a falar</span>
+        </button>
+      </section>
+      <button
+        class="voice-assistant-launcher"
+        id="voice-assistant-launcher"
+        type="button"
+        aria-expanded="false"
+        aria-controls="voice-assistant-panel"
+      >
+        <span aria-hidden="true">🎙️</span>
+        <span>Assistente</span>
+      </button>
+    </aside>
+
+    <footer>
+      <div class="container">© 2026 GeekZone · Jhonatan santos.</div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

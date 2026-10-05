@@ -1,0 +1,24 @@
+{
+  "name": "geekzone-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loja GeekZone com backend local, contas, pedidos e integrações de pagamento e frete",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check script.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "qrcode": "^1.5.4"
+  }
+}
